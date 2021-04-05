@@ -1,0 +1,12 @@
+<div *ngFor="let forecast of seaLevelForCast">
+  <mat-card style="background-color: darkgray; width: 1000px">
+    <span>Name:&nbsp;&nbsp;&nbsp;{{ this.cityName }}</span
+    ><br />
+    <span>Date:&nbsp;&nbsp;&nbsp;{{ forecast.dt_txt }}</span
+    ><br />
+    <span>Temp:&nbsp;&nbsp;&nbsp;{{ forecast.main.temp }}</span
+    ><br />
+    <span>Sea Level:&nbsp;&nbsp;&nbsp;{{ forecast.main.temp }}</span
+    ><br /> </mat-card
+  ><br />
+</div>

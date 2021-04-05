@@ -1,0 +1,10 @@
+
+  <div *ngFor="let city of europeCitiesDetails">
+    <button [routerLink]="['/forecast-details',city.name]" routerLinkActive="active"><mat-card style="background-color: darkgray; width: 1000px">
+      <span style="margin-left: -40px;">Name: &nbsp;&nbsp;&nbsp;{{ city.name }}</span><br>
+      <span>Sunrise:&nbsp;&nbsp;&nbsp;{{ city.sys.sunrise }}</span><br>
+      <span>Sunset:&nbsp;&nbsp;&nbsp;{{ city.sys.sunset }}</span><br>
+      <span style="margin-left: -45px;">Temp:&nbsp;&nbsp;&nbsp;{{ city.main.temp }}</span><br>
+    </mat-card><br></button><br>
+  </div>
+  
